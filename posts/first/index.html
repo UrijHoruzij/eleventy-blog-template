@@ -3,40 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  
   <title>My First Blog Post</title>
 </head>
 <body>
-  <header><nav class="navbar is-light" role="navigation" aria-label="main navigation">
-  <div class="navbar-start">
-    <div class="navbar-item has-text-weight-bold">
-    My Eleventy Blog
-    </div>
-  </div>
-  <div class="navbar-end">
-    <a href="https://urijhoruzij.github.io/eleventy-blog-template" class="navbar-item">
-      Home
-    </a>
-  </div>
-</nav></header>
-  <main>
+  <aside class="sidebar">
+    <header class="sidebar__logo">My Eleventy Blog</header>
+    <nav class="sidebar__navigation">
+  <ul class="navigation">
     
-<section class="page-layout">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        <article class="content mt-5">
-          <h1 class="title">My First Blog Post</h1>
-          <p class="subtitle is-6">
-            Published on: <time datetime="Sat Jun 19 2021 00:00:00 GMT+0000 (Coordinated Universal Time)">19 Jun 2021</time>
-          </p>
-          <p>You’ll find this post in your <code>posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>eleventy --serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+      <li class="navigation__item">
+        
+        <a href="/posts/first/" class="navigation__link 
+  navigation__link--activ
+">
+        My First Blog Post
+        </a>
+      </li>
+    
+      <li class="navigation__item">
+        
+        <a href="/posts/second/" class="navigation__link ">
+        Second
+        </a>
+      </li>
+    
+  </ul>
+</nav> 
 
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
+</aside>
+
+  <main class="content">
+    
+<article class="article">
+  <h1 class="article__title">My First Blog Post</h1>
+  <p>You’ll find this post in your <code>posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>eleventy --serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+</article>
+
   </main>
 </body>
 </html>
