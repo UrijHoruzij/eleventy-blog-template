@@ -1,1 +1,62 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-gray: #f6f6f6;
+	--bg-white: #ffffff;
+	--accent: #ee9b01;
+	--text-gray: #777777;
+	--text-black: #333333;
+}
+
+body {
+	display: flex;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+}
+
+.content {
+	background-color: var(--bg-white);
+	width: 100%;
+	max-width: 80%;
+}
+.sidebar {
+	position: sticky;
+	background-color: var(--bg-gray);
+	width: 100%;
+	max-width: 20%;
+	height: 100vh;
+	padding: 32px;
+}
+.sidebar__logo {
+	margin-bottom: 48px;
+}
+.sidebar__navigation {
+}
+.navigation {
+}
+.navigation__item {
+	margin-bottom: 8px;
+}
+.navigation__link {
+	font-size: 16px;
+	color: var(--text-gray);
+	transition: all 0.3s ease-in-out;
+}
+.navigation__link:hover {
+	color: var(--text-black);
+}
+.navigation__link--activ {
+	font-weight: 600;
+	color: var(--text-black);
+}
+.article {
+	padding: 96px 32px 32px 32px;
+}

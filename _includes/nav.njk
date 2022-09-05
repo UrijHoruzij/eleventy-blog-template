@@ -1,12 +1,14 @@
-<nav class="navbar is-light" role="navigation" aria-label="main navigation">
-  <div class="navbar-start">
-    <div class="navbar-item has-text-weight-bold">
-    {{ site.title }}
-    </div>
-  </div>
-  <div class="navbar-end">
-    <a href="{{ site.url }}" class="navbar-item">
-      Home
-    </a>
-  </div>
-</nav>
+<nav class="sidebar__navigation">
+  <ul class="navigation">
+    {% for post in collections.post %}
+      <li class="navigation__item">
+        {# <a href="{{ site.url }}{{ post.url }}" class="navigation__link">{{ post.data.title }}</a> #}
+        <a href="{{ post.url }}" class="navigation__link {% if page.fileSlug == post.fileSlug %}
+  navigation__link--activ
+{% endif %}">
+        {{ post.data.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav> 
