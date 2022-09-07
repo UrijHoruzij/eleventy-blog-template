@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+
+  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/markdown.css" />
+  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/normalize.css" />
   <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/style.css" />
   <title>Second</title>
 </head>
 <body>
   <aside class="sidebar">
-    <header class="sidebar__logo">My Eleventy Blog</header>
+    <header class="sidebar__header">
+        <div class="sidebar__logo">My Eleventy Blog</div>
+        <div class="sidebar__hamburger"></div>
+    </header>
     <nav class="sidebar__navigation">
   <ul class="navigation">
     
@@ -38,10 +44,13 @@
     
 <article class="article">
   <h1 class="article__title">Second</h1>
-  <p>You’ll find this post in your <code>posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>eleventy --serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+  <div class="markdown">
+    <p>You’ll find this post in your <code>posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>eleventy --serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
+  </div>
 </article>
 
   </main>
+  <script src="/js/main.js"></script>
 </body>
 </html>
