@@ -3,40 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-
-  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/markdown.css" />
-  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/normalize.css" />
-  <link rel="stylesheet" href="https://urijhoruzij.github.io/eleventy-blog-template/css/style.css" />
+  <link rel="stylesheet" href="/eleventy-blog-template/css/normalize.css" />
+  <link rel="stylesheet" href="/eleventy-blog-template/css/style.css" />
+  <link rel="stylesheet" href="/eleventy-blog-template/css/atom-one-dark.min.css" />
+  <script src="/eleventy-blog-template/js/highlight.min.js"></script>
+  <script src="/eleventy-blog-template/js/typescript.min.js"></script>
+  <script src="/eleventy-blog-template/js/javascript.min.js"></script>
+  <script src="/eleventy-blog-template/js/coffeescript.min.js"></script>
+  <script src="/eleventy-blog-template/js/css.min.js"></script>
+  <script src="/eleventy-blog-template/js/scss.min.js"></script>
+  <script src="/eleventy-blog-template/js/less.min.js"></script>
+  <script src="/eleventy-blog-template/js/stylus.min.js"></script>
+  <script src="/eleventy-blog-template/js/xml.min.js"></script>
+  <script src="/eleventy-blog-template/js/haml.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <title>My First Blog Post</title>
 </head>
 <body>
   <aside class="sidebar">
     <header class="sidebar__header">
-        <div class="sidebar__logo">My Eleventy Blog</div>
+        <div class="sidebar__logo"><a href="/eleventy-blog-template/">My Eleventy Blog</a></div>
         <div class="sidebar__hamburger"></div>
     </header>
     <nav class="sidebar__navigation">
   <ul class="navigation">
     
       <li class="navigation__item">
-        <a href="https://urijhoruzij.github.io/eleventy-blog-template/posts/first/" class="navigation__link 
+        <a href="/eleventy-blog-template/posts/first/" class="navigation__link 
   navigation__link--activ
 ">
         My First Blog Post
         </a>
-        
       </li>
     
       <li class="navigation__item">
-        <a href="https://urijhoruzij.github.io/eleventy-blog-template/posts/second/" class="navigation__link ">
+        <a href="/eleventy-blog-template/posts/second/" class="navigation__link ">
         Second
         </a>
-        
       </li>
     
   </ul>
+  <a href="https://github.com/UrijHoruzij/eleventy-blog-template" class="github">
+        <svg viewBox="0 0 30 30" width="30px"
+            height="30px">
+            <g>
+                <path style="stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                    d="M 15 3 C 8.371094 3 3 8.371094 3 15 C 3 20.621094 6.871094 25.328125 12.09375 26.628906 C 12.035156 26.46875 12 26.28125 12 26.046875 L 12 23.996094 C 11.511719 23.996094 10.695312 23.996094 10.492188 23.996094 C 9.671875 23.996094 8.941406 23.644531 8.585938 22.988281 C 8.195312 22.257812 8.125 21.144531 7.152344 20.460938 C 6.863281 20.234375 7.082031 19.976562 7.414062 20.011719 C 8.03125 20.183594 8.539062 20.605469 9.019531 21.230469 C 9.5 21.859375 9.722656 22 10.617188 22 C 11.050781 22 11.699219 21.976562 12.308594 21.878906 C 12.636719 21.046875 13.203125 20.28125 13.894531 19.917969 C 9.898438 19.507812 7.992188 17.519531 7.992188 14.820312 C 7.992188 13.65625 8.488281 12.535156 9.328125 11.585938 C 9.054688 10.648438 8.707031 8.730469 9.433594 8 C 11.234375 8 12.320312 9.164062 12.582031 9.480469 C 13.476562 9.175781 14.460938 9 15.496094 9 C 16.53125 9 17.519531 9.175781 18.417969 9.484375 C 18.675781 9.171875 19.761719 8 21.566406 8 C 22.296875 8.730469 21.945312 10.65625 21.667969 11.59375 C 22.503906 12.539062 22.996094 13.660156 22.996094 14.820312 C 22.996094 17.515625 21.089844 19.503906 17.101562 19.917969 C 18.199219 20.488281 19 22.101562 19 23.3125 L 19 26.046875 C 19 26.152344 18.976562 26.226562 18.964844 26.316406 C 23.640625 24.675781 27 20.234375 27 15 C 27 8.371094 21.628906 3 15 3 Z M 15 3 " />
+            </g>
+        </svg>
+    </a>
 </nav> 
+
 
 </aside>
 
@@ -61,26 +78,84 @@
 <li>And another item.</li>
 </ol>
 <ul>
-<li>Unordered list can use asterisks</li>
-</ul>
-<ul>
-<li>Or minuses</li>
-</ul>
-<ul>
-<li>Or pluses</li>
+<li>item</li>
+<li>item</li>
+<li>item</li>
 </ul>
 <p><a href="https://www.google.com">I'm an inline-style link</a></p>
-<p><a href="https://www.google.com" title="Google's Homepage">I'm an inline-style link with title</a></p>
-<p>[I'm a reference-style link][arbitrary case-insensitive reference text]</p>
-<p><a href="../blob/master/LICENSE">I'm a relative reference to a repository file</a></p>
-<p>[You can use numbers for reference-style link definitions][1]</p>
-<p><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<p><img src="https://images.unsplash.com/photo-1662220213379-6463b026d6cf" alt="alt text"></p>
 <p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
 <pre><code class="language-javascript">var s = 'JavaScript syntax highlighting';
 alert(s);
 </code></pre>
-<pre><code class="language-python">s = &quot;Python syntax highlighting&quot;
-print s
+<pre><code class="language-typescript">class MyClass {
+	public static myValue: string;
+	constructor(init: string) {
+		this.myValue = init;
+	}
+}
+</code></pre>
+<pre><code class="language-xml">&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
+
+&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+&lt;script type=&quot;application/javascript&quot;&gt;
+  function $init() {return true;}
+&lt;/script&gt;
+
+&lt;body&gt;
+  &lt;p checked class=&quot;title&quot; id='title'&gt;Title&lt;/p&gt;
+  &lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;
+</code></pre>
+<pre><code class="language-xml">&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
+
+&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+&lt;script type=&quot;application/javascript&quot;&gt;
+  function $init() {return true;}
+&lt;/script&gt;
+
+&lt;body&gt;
+  &lt;p checked class=&quot;title&quot; id='title'&gt;Title&lt;/p&gt;
+  &lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;
+</code></pre>
+<pre><code class="language-css">@font-face {
+	font-family: Chunkfive;
+	src: url('Chunkfive.otf');
+}
+
+body,
+.usertext {
+	color: #f0f0f0;
+	background: #600;
+	font-family: Chunkfive, sans;
+	--heading-1: 30px/32px Helvetica, sans-serif;
+}
+
+@import url(print.css);
+@media print {
+	a[href^='http']::after {
+		content: attr(href);
+	}
+}
+</code></pre>
+<pre><code class="language-coffescript">grade = (student, period=(if b? then 7 else 6)) -&gt;
+  if student.excellentWork
+    &quot;A+&quot;
+  else if student.okayStuff
+    if student.triedHard then &quot;B&quot; else &quot;B-&quot;
+  else
+    &quot;C&quot;
+
+class Animal extends Being
+  constructor: (@name) -&gt;
+
+  move: (meters) -&gt;
+    alert @name + &quot; moved #{meters}m.&quot;
 </code></pre>
 <pre><code>No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
@@ -122,15 +197,11 @@ This line is part of the same quote.</p>
 </blockquote>
 <p>Three or more...</p>
 <hr>
-<p>Hyphens</p>
-<hr>
-<p>Asterisks</p>
-<hr>
 
   </div>
 </article>
 
   </main>
-  <script src="/js/main.js"></script>
+  <script src="/eleventy-blog-template/js/main.js"></script>
 </body>
 </html>
