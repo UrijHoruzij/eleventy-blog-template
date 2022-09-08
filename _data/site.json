@@ -1,6 +1,7 @@
 {
 	"title": "My Eleventy Blog",
+	"description": "A simple blog with awesome content",
+	"github": "https://github.com/UrijHoruzij/eleventy-blog-template",
 	"url": "https://urijhoruzij.github.io/eleventy-blog-template",
-	"language": "en",
-	"description": "A simple blog with awesome content"
+	"lang": "en"
 }

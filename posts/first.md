@@ -29,25 +29,15 @@ _Курсив_
 3. Actual numbers don't matter, just that it's a number
 4. And another item.
 
-- Unordered list can use asterisks
-
-* Or minuses
-
-- Or pluses
+- item
+- item
+- item
 
 [I'm an inline-style link](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
+[logo]: https://images.unsplash.com/photo-1662220213379-6463b026d6cf
 
 Inline `code` has `back-ticks around` it.
 
@@ -56,9 +46,83 @@ var s = 'JavaScript syntax highlighting';
 alert(s);
 ```
 
-```python
-s = "Python syntax highlighting"
-print s
+```typescript
+class MyClass {
+	public static myValue: string;
+	constructor(init: string) {
+		this.myValue = init;
+	}
+}
+```
+
+```xml
+<!DOCTYPE html>
+<title>Title</title>
+
+<style>body {width: 500px;}</style>
+
+<script type="application/javascript">
+  function $init() {return true;}
+</script>
+
+<body>
+  <p checked class="title" id='title'>Title</p>
+  <!-- here goes the rest of the page -->
+</body>
+```
+
+```xml
+<!DOCTYPE html>
+<title>Title</title>
+
+<style>body {width: 500px;}</style>
+
+<script type="application/javascript">
+  function $init() {return true;}
+</script>
+
+<body>
+  <p checked class="title" id='title'>Title</p>
+  <!-- here goes the rest of the page -->
+</body>
+```
+
+```css
+@font-face {
+	font-family: Chunkfive;
+	src: url('Chunkfive.otf');
+}
+
+body,
+.usertext {
+	color: #f0f0f0;
+	background: #600;
+	font-family: Chunkfive, sans;
+	--heading-1: 30px/32px Helvetica, sans-serif;
+}
+
+@import url(print.css);
+@media print {
+	a[href^='http']::after {
+		content: attr(href);
+	}
+}
+```
+
+```coffescript
+grade = (student, period=(if b? then 7 else 6)) ->
+  if student.excellentWork
+    "A+"
+  else if student.okayStuff
+    if student.triedHard then "B" else "B-"
+  else
+    "C"
+
+class Animal extends Being
+  constructor: (@name) ->
+
+  move: (meters) ->
+    alert @name + " moved #{meters}m."
 ```
 
 ```
@@ -82,13 +146,5 @@ Quote break.
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 Three or more...
-
----
-
-Hyphens
-
----
-
-Asterisks
 
 ---
